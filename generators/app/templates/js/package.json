@@ -1,0 +1,33 @@
+{
+  "name": "api.tests.poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run create:env && jest",
+    "test:api:dev": "cross-env TEST_ENV=dev npm test",
+    "test:api:sandbox": "cross-env TEST_ENV=sandbox npm test",
+    "create:env": "node ./utils/create-env.js"
+  },
+  "author": "Dinesh Kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "chalk": "^4.1.2",
+    "cross-env": "^7.0.3",
+    "dotenv-safe": "^8.2.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-jest": "^24.4.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "jest": "^27.0.6",
+    "jest-html-reporters": "^2.1.6",
+    "jest-junit": "^12.2.0",
+    "prettier": "^2.3.2",
+    "supertest": "^6.1.4",
+    "uuid": "^8.3.2"
+  },
+  "dependencies": {}
+}

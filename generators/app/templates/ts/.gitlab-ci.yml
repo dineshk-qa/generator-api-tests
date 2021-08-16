@@ -1,0 +1,31 @@
+stages:
+  - dev-tests
+  - staging-tests
+  - sandbox-tests
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - ./node_modules/
+
+image: node:latest
+
+before_script:
+  - npm ci
+
+api-tests-sandbox:
+  stage: sandbox-tests
+  script:
+    - npm run test:sandbox  
+  artifacts:
+    paths:
+      - html-report
+
+api-tests-dev:
+  stage: dev-tests
+  script:
+    - npm run test:dev  
+  artifacts:
+    paths:
+      - html-report
+  when: manual
