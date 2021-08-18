@@ -1,6 +1,6 @@
 {
   "name": "@zen-qa/generator-api-tests",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TS/JS boilerplate using SuperTest and Jest as core modules",
   "license": "ISC",
   "repository": "git@github.com:dineshk-qa/generator-api-tests.git",
