@@ -1,5 +1,5 @@
 # generator-api-tests
-> **generator for Api functional tests boilerplate with TS/JS**
+> **yeoman generator for Api functional tests boilerplate with TS/JS**
 
 ### Project brief
  - This boilerplate uses SuperTest and Jest as core modules to carry out the api endpoint validations.  
